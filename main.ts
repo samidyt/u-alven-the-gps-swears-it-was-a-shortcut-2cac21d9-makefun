@@ -5,7 +5,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const LINE =
-  "That roundabout had an exit on my map. It didn't say which lap, and I wasn't about to ask the roundabout.";
+  "The roundabout had an exit on my map. It never said which lap, and I wasn't about to ask the roundabout.";
 
 // Pre-write gate: the house gate requires UTF-8 text of 1-200 chars,
 // exactly one line, not only whitespace, no leading/trailing whitespace.
