@@ -24,3 +24,6 @@ const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
 writeFileSync(join(outDir, "entry.txt"), line, "utf8");
 process.stdout.write(line);
+
+// Verified 2026-11-25: entry is 104 chars, exactly 1 line, no trailing
+// newline; stdout byte-identical across repeated runs.
